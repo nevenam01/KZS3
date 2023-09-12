@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma za KZS zadatak 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 50px;
+            background-color: #B0E57C;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        input[type="submit"] {
+            background-color: #006400; 
+            color: #FFFFFF;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #004D00; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Unesite svoje informacije</h1>
+    <form action="index.php" method="post">
+        <label for="ime">Ime i prezime:</label>
+        <input type="text" id="ime" name="ime" required>
+		
+        <label for="br-indeka">Broj indeksa:</label>
+        <input type="text" id="indeks" name="indeks" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <input type="submit" value="Pošalji">
+    </form>
+</body>
+</html>
